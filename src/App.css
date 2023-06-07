@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+:root {
+  --purple-color: #8a1e86;
+  --orange-color: #fcb43a;
+  --gray-color: #212529; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-one {
+  font-size: 2rem;
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.comman-paragraph {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--gray-color);
+}
+.comman-button {
+  background: linear-gradient(to right, var(--orange-color), var(--purple-color));
+  padding: 1rem;
+  border-radius: 50px;
   color: white;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 576px  ) {
+  .comman-button {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 768px ) {
+  .head-one {
+    font-size: 2.5rem;
+  }
+  .comman-paragraph {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 1024px ) {
+  .head-one {
+    font-size: 3rem;
   }
 }
